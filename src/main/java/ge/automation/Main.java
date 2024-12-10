@@ -15,9 +15,9 @@ public class Main {
         // 2 დავალება
         Replace replacer = new Replace();
         String inputString = "AlphaAndBetaTesters";
-        String resultA = replacer.replaceSymbolA(inputString); // მეთოდი რომელიც შეცვლის ყველა "a" სიმბოლოს "z" -თი
+        String resultA = replacer.replaceSymbolA(inputString); // მეთოდი რომელიც შეცვლის ყველა "a" სიმბოლოს "z" სიმბოლოთი
         System.out.println("შეცვლილი 'a': " + resultA);
-        String resultB = replacer.replaceSymbolB(inputString); // მეთოდი რომელიც შეცვლის ყველა "b" სიმბოლოს "w" -თი
+        String resultB = replacer.replaceSymbolB(inputString); // მეთოდი რომელიც შეცვლის ყველა "b" სიმბოლოს "w" სიმბოლოთი
         System.out.println("შეცვლილი 'b': " + resultB);
 
 
@@ -25,7 +25,7 @@ public class Main {
         int[] array = {18, -3, 5, -7, 6, 89, 13, 0, -89}; // მასივის ელემენტები
         int classify; // ცვლადი, რომელიც გამოიყენება ელემენტების ადგილების გადასანაცვლებლად
         for (int i = 0; i < array.length - 1; i++) {
-            for (int j = 0; j < array.length - 1 - i; j++) { // ბოლო ელემენტი ყოველი პასის შემდეგ დალაგებული იქნება
+            for (int j = 0; j < array.length - 1 - i; j++) {
                 if (array[j] > array[j + 1]) {
                     // ადგილების გაცვლის ლოგიკა
                     classify = array[j + 1];
